@@ -1,18 +1,15 @@
 {
-	"builds":[
-		{
-
-			"src": "Tgbot.py",
-			"use": "@vercel/python"
-		}
-	],
-
-	"routes": [
-
-		{
-
-		"src": "/(.*)",
-		"dest": "/Tgbot.py"
-		}
-	]
+  "version": 2,
+  "builds": [
+    {
+      "src": "bot.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "bot.py"
+    }
+  ]
 }
