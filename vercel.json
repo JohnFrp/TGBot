@@ -1,0 +1,18 @@
+{
+	"builds":[
+		{
+
+			"src": "Tgbot.py",
+			"use": "@vercel/python"
+		}
+	],
+
+	"routes": [
+
+		{
+
+		"src": "/(.*)",
+		"dest": "/Tgbot.py"
+		}
+	]
+}
